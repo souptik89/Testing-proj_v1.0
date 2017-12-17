@@ -1,0 +1,60 @@
+<ion-content no-bounce>
+
+
+    <div class="logo-wrap" padding-vertical margin-bottom>
+        <div text-center class="logo">
+            <img src="assets/imgs/gallery.svg" alt="avatar">
+        </div>
+    </div>
+
+
+    <ion-list text-center margin-horizontal class="round-box" *ngIf="!show">
+
+        <ion-item text-center class="ph">
+            <ion-input type="text" placeholder="Phone Number" text-center></ion-input>
+        </ion-item>
+
+        <ion-item text-center class="pass mb-20">
+            <ion-input type="password" placeholder="Password" text-center></ion-input>
+        </ion-item>
+
+    </ion-list>
+
+    <ion-list text-center margin-horizontal class="round-box" *ngIf="show">
+
+        <ion-item text-center class="ph">
+            <ion-input type="text" placeholder="Phone Number" text-center></ion-input>
+        </ion-item>
+
+        <ion-item text-center class="pass">
+            <ion-input type="text" placeholder="Password" text-center></ion-input>
+        </ion-item>
+
+        <ion-item text-center class="pass mb-20">
+            <ion-input type="password" placeholder="Confirm Password" text-center></ion-input>
+        </ion-item>
+
+    </ion-list>
+
+
+
+    <div text-center margin-horizontal *ngIf="!show">
+        <button ion-button class="btn blue-btn pop-in" (tap)="gotohome()">LOGIN</button>
+    </div>
+    <div text-center margin-horizontal *ngIf="show">
+        <button ion-button class="btn blue-btn pop-in" (tap)="gotohome()">Register</button>
+    </div>
+
+    <!-- <div class="bottom-part">
+        <p float-left text-center class="link" (tap)="forgotPass()">Forgot Password?</p>
+        <p float-right text-center class="link" (tap)="registration()">{{txtval}}</p>
+    </div> -->
+    <div class="blur"></div>
+</ion-content>
+<ion-footer>
+    <div class="bottom-part">
+        <p float-left text-center class="link" (tap)="forgotPass()">Forgot Password?</p>
+        <p float-right text-center class="link" (tap)="registration()">{{txtval}}</p>
+    </div>
+
+</ion-footer>

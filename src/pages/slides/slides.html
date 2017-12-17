@@ -1,0 +1,68 @@
+<ion-content no-bounce class="welcome-slide" fullscreen>
+
+    <ion-slides pager initialSlide="0" autoplay="3000" #slider (ionSlideWillChange)="onSlideChanged()">
+        <ion-slide class="slide-1">
+
+            <div class="logo-image">
+                <img src="assets/img/sweeping.png" />
+            </div>
+            <p>Need To Fix Any Problem?
+                <br/>
+                <span>No Worries!</span>
+            </p>
+            <p padding-vertical class="ioc-title">Just Get Registered!</p>
+
+
+        </ion-slide>
+
+        <ion-slide class="slide-2">
+
+            <div class="logo-image">
+                <img src="assets/img/sweeping.png" />
+            </div>
+            <p>We Are Here To Help You With Our
+                <br/>
+                <span>Professional Workers!</span>
+            </p>
+            <p padding-vertical class="ioc-title">Find And Book Your Preferred Worker!</p>
+
+
+        </ion-slide>
+
+        <ion-slide class="slide-3">
+
+            <div class="logo-image">
+                <img src="assets/img/sweeping.png" />
+            </div>
+            <p>Your Service Is Our Priority.
+                <br/>
+                <span>Get Your Problem Fixed!</span>
+            </p>
+            <p padding-vertical class="ioc-title">Get Your Job Done!</p>
+
+
+        </ion-slide>
+
+        <ion-slide class="slide-4">
+
+            <div class="logo-image">
+                <img src="assets/img/sweeping.png" />
+            </div>
+            <p>Out Off Cash? No Problem.
+                <br/>
+                <span>Pay Online!</span>
+            </p>
+            <p padding-vertical class="ioc-title">Pay Instantly!</p>
+            <div class="floating-buttons pop-in" *ngIf="slideIndex >= slides.length - 1">
+                <button round ion-button class="get-start" (tap)="gotologin()">get started</button>
+            </div>
+        </ion-slide>
+    </ion-slides>
+    <ion-footer no-border>
+        <ion-toolbar text-center transparent>
+            <ion-buttons text-center *ngIf="slideIndex < slides.length - 1">
+                <button ion-button text-center class="skip-btn" (tap)="gotologin()">Skip</button>
+            </ion-buttons>
+        </ion-toolbar>
+    </ion-footer>
+</ion-content>

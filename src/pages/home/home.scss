@@ -1,0 +1,81 @@
+                page-home {
+                    .scroll-content {
+                        background-color: #000;
+                    }
+                    .head {
+                        height: 25vh;
+                        overflow: hidden;
+                        .map {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .body {
+                        background-color: #000;
+                        .body-wrap {
+                            width: 100vw;
+                            .person-pic {
+                                border-radius: 50%;
+                                width: 100px;
+                                height: 100px;
+                                z-index: 1;
+                                overflow: hidden;
+                                margin: -60px auto 0px 20px;
+                                z-index: 1;
+                                overflow: hidden;
+                                background-color: #3a3a3a;
+                                img {
+                                    max-width: 100%;
+                                }
+                            }
+                            .name-rating .w-name {
+                                margin: 5px auto 5px 20px;
+                                color: #fff;
+                                font-size: 1.65rem;
+                                text-transform: capitalize;
+                            }
+                            .category-cards {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                margin: 0px 6px;
+                                justify-content: space-between;
+                                ion-card,
+                                .card-md,
+                                .card-ios {
+                                    width: 47%;
+                                    margin: 0px auto 10px;
+                                    position: relative;
+                                    overflow: hidden;
+                                    border-radius: 3px;
+                                    position: relative;
+                                }
+                                h3 {
+                                    color: #fff;
+                                    z-index: 100;
+                                    text-transform: capitalize;
+                                    background-color: rgba(0, 0, 0, 0.3);
+                                    position: absolute;
+                                    display: block;
+                                    width: 100%;
+                                    padding: 12px;
+                                    margin: 0px;
+                                    border-top-right-radius: 3px;
+                                    border-top-left-radius: 3px;
+                                }
+                                ion-thumbnail {
+                                    border-radius: 3px;
+                                    position: relative;
+                                    height: 180px;
+                                    width: 100%;
+                                    overflow: hidden;
+                                    img {
+                                        max-width: 100%;
+                                        max-height: 180px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }

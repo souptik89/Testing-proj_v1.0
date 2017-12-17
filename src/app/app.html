@@ -1,0 +1,47 @@
+<!-- <ion-menu persistent="true" [content]="content" (ionClose)="collapseMenuOptions()"> -->
+<ion-menu persistent="true" [content]="content">
+    <ion-header class="sidebar">
+        <div text-left class="profile-wrap drop-in">
+            <ion-avatar class="person-pic">
+                <img src="assets/imgs/profile.jpg" alt="avatar">
+            </ion-avatar>
+
+            <h4 text-left (click)="openPageprofile()">Michael Emerson</h4>
+
+
+        </div>
+    </ion-header>
+
+
+    <ion-content class="menu-wrap">
+
+        <!-- Side Menu -->
+        <!--  <side-menu-content margin-vertical class="menu-wrap" [accordionMode]="true" [options]="options" (selectOption)="selectOption($event)"></side-menu-content>
+ -->
+
+        <ion-list class="menus">
+            <button menuClose ion-item (click)="openPagehome()">
+        <ion-icon name="home" margin-right></ion-icon>
+        <span class="menu-name">Home</span>
+      </button>
+            <button menuClose ion-item (click)="openPageprofile()">
+        <ion-icon name="person" margin-right></ion-icon>
+        <span class="menu-name">Profile</span>
+      </button>
+            <button menuClose ion-item (click)="openPagehome()">
+        <ion-icon name="home" margin-right></ion-icon>
+        <span class="menu-name">Home</span>
+      </button>
+            <button menuClose ion-item (click)="openPageprofile()">
+        <ion-icon name="person" margin-right></ion-icon>
+        <span class="menu-name">Profile</span>
+      </button>
+
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

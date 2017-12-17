@@ -1,0 +1,32 @@
+page-nav-popover-1 {
+    .scroll-content {
+        background: transparent;
+    }
+    .list-md,
+    .list,
+    ion-list {
+        margin: 0px !important;
+    }
+    .list-ios>.item-block:last-child {
+        border: none;
+    }
+    .item-md,
+    .item-ios,
+    .item-md:first-child,
+    .item-ios:first-child {
+        background-color: #F1F1F1;
+        border-bottom: 1px solid #dedede !important;
+    }
+    .item-md:last-child,
+    .item-ios:last-child {
+        border: none;
+    }
+    button.item-ios:not([detail-none]) .item-inner,
+    button .item-inner {
+        background-image: none;
+        margin: 0px auto;
+        padding: 0px 20px;
+        text-transform: capitalize;
+        color: #000;
+    }
+}

@@ -1,0 +1,261 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+@import '../theme/animations';
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url('../assets/fonts/MaterialIcons-Regular.woff2') format('woff2'), url('../assets/fonts/MaterialIcons-Regular.woff') format('woff'), url('../assets/fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../assets/fonts/quicksand-regular-webfont.woff2') format('woff2'), url('../assets/fonts/quicksand-regular-webfont.woff') format('woff'), url('../assets/fonts/quicksand-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+/* fonts  */
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.content {
+    font-family: 'quicksandregular';
+}
+
+
+/* navbar start*/
+
+ion-navbar,
+ion-navbar .toolbar-background {
+    background: #4c3093;
+    background: -moz-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #4c3093), color-stop(12%, #4f3091), color-stop(30%, #5230a8), color-stop(46%, #4f30a3), color-stop(72%, #513098), color-stop(100%, #47306b));
+    background: -webkit-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    background: -o-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    background: -ms-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    background: linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c3093', endColorstr='#47306b', GradientType=1)";
+    span,
+    .toolbar-title {
+        font-weight: 300;
+        font-size: 1.7rem;
+        color: #fff;
+    }
+    ion-icon,
+    .material-icons {
+        color: #fff;
+        font-size: 2.4rem;
+    }
+}
+
+
+/* navbar end*/
+
+
+/* button start */
+
+.btn {
+    min-width: 38vw;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.blue-btn {
+    background: #4c3093;
+    background: -moz-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #4c3093), color-stop(12%, #4f3091), color-stop(30%, #5230a8), color-stop(46%, #4f30a3), color-stop(72%, #513098), color-stop(100%, #47306b));
+    background: -webkit-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    background: -o-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    background: -ms-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    background: linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c3093', endColorstr='#47306b', GradientType=1)";
+}
+
+
+/* side bar */
+
+ion-menu {
+    .header-md::after,
+    .tabs-md[tabsPlacement="top"]>.tabbar::after,
+    .footer-md::before,
+    .tabs-md[tabsPlacement="bottom"]>.tabbar::before {
+        background-image: none;
+    }
+}
+
+.show-menu .menu-inner,
+.md ion-menu[type=overlay] .menu-inner {
+    /*  background: #4c3093;
+    background: -moz-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #4c3093), color-stop(12%, #4f3091), color-stop(30%, #5230a8), color-stop(46%, #4f30a3), color-stop(72%, #513098), color-stop(100%, #47306b));
+    background: -webkit-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    background: -o-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    background: -ms-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    background: linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #513098 72%, #47306b 100%);
+    filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c3093', endColorstr='#47306b', GradientType=1)";
+    -webkit-box-shadow: inset -6px 0px 10px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset -6px 0px 10px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: inset -6px 0px 10px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.menu-wrap {
+    /* background: #4c3093;
+    background: -moz-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #5230a7 72%, #47306b 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #4c3093), color-stop(12%, #4f3091), color-stop(30%, #5230a8), color-stop(46%, #4f30a3), color-stop(72%, #5230a7), color-stop(100%, #47306b));
+    background: -webkit-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #5230a7 72%, #47306b 100%);
+    background: -o-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #5230a7 72%, #47306b 100%);
+    background: -ms-linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #5230a7 72%, #47306b 100%);
+    background: linear-gradient(45deg, #4c3093 0%, #4f3091 12%, #5230a8 30%, #4f30a3 46%, #5230a7 72%, #47306b 100%);
+    filter: "progid: DXImageTransform.Microsoft.gradient( startColorstr='#4c3093', endColorstr='#47306b', GradientType=1)"; */
+}
+
+.sidebar {
+    background-image: url('../assets/imgs/9700.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #2e2e2e;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    .person-pic {
+        border: 1px solid #ededed;
+        width: 65px;
+        height: 65px;
+        overflow: hidden;
+        margin: 0px auto 10px 15px;
+    }
+    .input-wrapper {
+        height: auto;
+        font-size: 15px;
+    }
+    ion-avatar img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        border-radius: 0;
+        overflow: hidden;
+    }
+    .profile-wrap ion-label {
+        text-align: center;
+    }
+    h4 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 10px auto 0px;
+        overflow: hidden;
+        padding: 0px 16px;
+        text-transform: capitalize;
+    }
+}
+
+.menu-wrap {
+    -webkit-box-shadow: inset 0px -7px 10px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px -7px 10px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px -7px 10px 5px rgba(0, 0, 0, 0.3);
+    .list-ios>.item-block:last-child,
+    .list-ios>.item-block:first-child {
+        border: none;
+    }
+}
+
+.menus {
+    margin-top: 3px;
+    border: none;
+    .icons {
+        margin: 0px;
+        width: 19px;
+    }
+    ion-icon {
+        margin: 0px;
+        font-size: 1.5em;
+        width: 19px;
+    }
+    ion-item,
+    .item,
+    .item-md,
+    button.item-ios,
+    .item-block {
+        background-color: transparent;
+        color: #222;
+        text-transform: capitalize;
+        border-bottom: none;
+        background-image: none;
+        .item-inner {
+            /* border-bottom: 1px solid rgba(41, 41, 41, 0.18); */
+            border-bottom: none;
+            background-image: none;
+        }
+        .material-icons {
+            color: #222;
+            font-size: 1.4em;
+            margin: 0px;
+            width: 19px;
+        }
+        ion-label,
+        .label-ios,
+        .label-md {
+            display: flex;
+            align-items: baseline;
+            font-weight: 300;
+        }
+    }
+    .input-wrapper {
+        font-size: 16px;
+        font-weight: 300;
+        height: auto;
+        color: #222;
+        .list-ios>.item-block:first-child {
+            border: none;
+        }
+    }
+    .list-ios>.item-block:last-child,
+    .list-ios>.item-block:first-child {
+        border: none;
+    }
+}
